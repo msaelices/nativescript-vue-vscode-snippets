@@ -7,7 +7,12 @@ Based on the **NativeScript XML Snippets** extension, but adapted to the Vue bin
 All snippets are prefixed with ```ns```. Attributes do not have a prefix.
 
 ## Code Snippets
+- Create a Vue instance - ```nsvue```
 - HTTP Fetch example - ```nsfetch```
+- `isIOS` import sentence - ```nsisios```
+- `isAndroid` import sentence - ```nsisandroid```
+- NS `app` import sentence - ```nsapp```
+- NS `launchEvent` block code - ```nslaunchevent```
 
 ## UI Components
 
