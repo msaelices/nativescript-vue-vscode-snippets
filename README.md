@@ -1,4 +1,4 @@
-# NativeScript XML Snippets for Visual Studio Code
+# NativeScript Vue Snippets for Visual Studio Code
 
 vscode extension with useful snippets for developing NativeScript-Vue mobile applications.
 
@@ -42,22 +42,13 @@ All snippets are prefixed with ```ns```. Attributes do not have a prefix.
 - Web View - ```nswebview```
 
 ### Attributes
-- cssClass - ```css```
-- text - ```text```
 - icon - ```icon```
-- tap - ```tap```
 - textWrap - ```wrap```
 - horizontalAlignment - ```halign```
 - verticalAlignment - ```valign```
 - visibility - ```visibility```
 - stretch - ```stretch```
 - keyboardType - ```kbtype```
-- colSpan - ```colspan```
-- rowSpan - ```rowspan```
-- row - ```row```
-- col - ```col```
-- width - ```width```
-- height - ```height```
 
 ## How to use?
 
