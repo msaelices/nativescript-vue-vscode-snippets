@@ -10,6 +10,11 @@
     "categories": [
         "Snippets"
     ],
+    "keywords": [
+        "nativescript",
+        "snippets",
+        "vue"
+    ],
     "contributes": {
         "snippets": [
             {
