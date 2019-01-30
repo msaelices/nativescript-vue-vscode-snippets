@@ -1,0 +1,415 @@
+{
+    // Action Bar
+    "{N}-vue Action Bar": {
+        "prefix": "nsactionbar",
+        "body": [
+            "<ActionBar title=\"Title\" icon=\"\">",
+            "    <NavigationButton text=\"Back\" icon=\"\" @tap="" />",
+            "    <ActionBar.actionItems>",
+            "        <ActionItem icon=\"\" text=\"Left\" ios.position=\"left\" @tap=\"\" />",
+            "        <ActionItem icon=\"\" text=\"Right\" ios.position=\"right\" @tap=\"\" />",
+            "    </ActionBar.actionItems>",
+            "</ActionBar>"
+        ]
+    },
+
+    // Layouts
+    "{N}-vue Stack Layout": {
+        "prefix": "nsstack",
+        "body": [
+            "<StackLayout>",
+            "    $1",
+            "</StackLayout>"
+        ]
+    },
+    "{N}-vue Stack Layout Horizontal": {
+        "prefix": "nsstack_horizontal",
+        "body": [
+            "<StackLayout orientation=\"horizontal\">",
+            "    $1",
+            "</StackLayout>"
+        ]
+    },
+    "{N}-vue Wrap Layout": {
+        "prefix": "nswrap",
+        "body": [
+            "<WrapLayout orientation=\"horizontal\" itemWidth=\"$1\" itemHeight=\"$2\">",
+            "    $3",
+            "</WrapLayout>"
+        ]
+    },
+    "{N}-vue Absolute Layout": {
+        "prefix": "nsabsolute",
+        "body": [
+            "<AbsoluteLayout>",
+            "    <Label text=\"This is Label 1\" top=\"\"  right=\"\" bottom=\"\" left=\"\" />",
+            "    $1",
+            "</AbsoluteLayout>"
+        ]
+    },
+    "{N}-vue Dock Layout": {
+        "prefix": "nsdock",
+        "body": [
+            "<DockLayout stretchLastChild=\"true\">",
+            "    <Label dock=\"top\" text=\"I am on top!\"/>",
+            "</DockLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout": {
+        "prefix": "nsgrid",
+        "body": [
+            "<GridLayout rows=\"$1\" columns=\"$2\">",
+            "    $3",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 2x2": {
+        "prefix": "nsgrid_2x2",
+        "body": [
+            "<GridLayout rows=\"*, *\" columns=\"*, *\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 2x2 Automatic Width/Height": {
+        "prefix": "nsgrid_2x2_auto",
+        "body": [
+            "<GridLayout rows=\"auto, auto\" columns=\"auto, auto\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 3x3 ": {
+        "prefix": "nsgrid_3x3",
+        "body": [
+            "<GridLayout rows=\"*, *, *\" columns=\"*, *, *\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"0, 2\" row=\"0\" col=\"2\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "    <Label text=\"1, 2\" row=\"1\" col=\"2\" />",
+            "    <Label text=\"2, 0\" row=\"2\" col=\"0\" />",
+            "    <Label text=\"2, 1\" row=\"2\" col=\"1\" />",
+            "    <Label text=\"2, 2\" row=\"2\" col=\"2\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 3x3 Automatic Width/Height": {
+        "prefix": "nsgrid_3x3_auto",
+        "body": [
+            "<GridLayout rows=\"auto, auto, auto\" columns=\"auto, auto, auto\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"0, 2\" row=\"0\" col=\"2\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "    <Label text=\"1, 2\" row=\"1\" col=\"2\" />",
+            "    <Label text=\"2, 0\" row=\"2\" col=\"0\" />",
+            "    <Label text=\"2, 1\" row=\"2\" col=\"1\" />",
+            "    <Label text=\"2, 2\" row=\"2\" col=\"2\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 4x3 ": {
+        "prefix": "nsgrid_4x3",
+        "body": [
+            "<GridLayout rows=\"*, *, *, *\" columns=\"*, *, *\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"0, 2\" row=\"0\" col=\"2\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "    <Label text=\"1, 2\" row=\"1\" col=\"2\" />",
+            "    <Label text=\"2, 0\" row=\"2\" col=\"0\" />",
+            "    <Label text=\"2, 1\" row=\"2\" col=\"1\" />",
+            "    <Label text=\"2, 2\" row=\"2\" col=\"2\" />",
+            "    <Label text=\"3, 0\" row=\"3\" col=\"0\" />",
+            "    <Label text=\"3, 1\" row=\"3\" col=\"1\" />",
+            "    <Label text=\"3, 2\" row=\"3\" col=\"2\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 4x3 Automatic Width/Height": {
+        "prefix": "nsgrid_4x3_auto",
+        "body": [
+            "<GridLayout rows=\"auto, auto, auto, auto\" columns=\"auto, auto, auto\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"0, 2\" row=\"0\" col=\"2\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "    <Label text=\"1, 2\" row=\"1\" col=\"2\" />",
+            "    <Label text=\"2, 0\" row=\"2\" col=\"0\" />",
+            "    <Label text=\"2, 1\" row=\"2\" col=\"1\" />",
+            "    <Label text=\"2, 2\" row=\"2\" col=\"2\" />",
+            "    <Label text=\"3, 0\" row=\"3\" col=\"0\" />",
+            "    <Label text=\"3, 1\" row=\"3\" col=\"1\" />",
+            "    <Label text=\"3, 2\" row=\"3\" col=\"2\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 4x4": {
+        "prefix": "nsgrid_4x4",
+        "body": [
+            "<GridLayout rows=\"*, *, *, *\" columns=\"*, *, *, *\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"0, 2\" row=\"0\" col=\"2\" />",
+            "    <Label text=\"0, 3\" row=\"0\" col=\"3\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "    <Label text=\"1, 2\" row=\"1\" col=\"2\" />",
+            "    <Label text=\"1, 3\" row=\"1\" col=\"3\" />",
+            "    <Label text=\"2, 0\" row=\"2\" col=\"0\" />",
+            "    <Label text=\"2, 1\" row=\"2\" col=\"1\" />",
+            "    <Label text=\"2, 2\" row=\"2\" col=\"2\" />",
+            "    <Label text=\"2, 3\" row=\"2\" col=\"3\" />",
+            "    <Label text=\"3, 0\" row=\"3\" col=\"0\" />",
+            "    <Label text=\"3, 1\" row=\"3\" col=\"1\" />",
+            "    <Label text=\"3, 2\" row=\"3\" col=\"2\" />",
+            "    <Label text=\"3, 3\" row=\"3\" col=\"3\" />",
+            "</GridLayout>"
+        ]
+    },
+    "{N}-vue Grid Layout 4x4 Automatic Width/Height": {
+        "prefix": "nsgrid_4x4_auto",
+        "body": [
+            "<GridLayout rows=\"auto, auto, auto, auto\" columns=\"auto, auto, auto, auto\">",
+            "    <Label text=\"0, 0\" row=\"0\" col=\"0\" />",
+            "    <Label text=\"0, 1\" row=\"0\" col=\"1\" />",
+            "    <Label text=\"0, 2\" row=\"0\" col=\"2\" />",
+            "    <Label text=\"0, 3\" row=\"0\" col=\"3\" />",
+            "    <Label text=\"1, 0\" row=\"1\" col=\"0\" />",
+            "    <Label text=\"1, 1\" row=\"1\" col=\"1\" />",
+            "    <Label text=\"1, 2\" row=\"1\" col=\"2\" />",
+            "    <Label text=\"1, 3\" row=\"1\" col=\"3\" />",
+            "    <Label text=\"2, 0\" row=\"2\" col=\"0\" />",
+            "    <Label text=\"2, 1\" row=\"2\" col=\"1\" />",
+            "    <Label text=\"2, 2\" row=\"2\" col=\"2\" />",
+            "    <Label text=\"2, 3\" row=\"2\" col=\"3\" />",
+            "    <Label text=\"3, 0\" row=\"3\" col=\"0\" />",
+            "    <Label text=\"3, 1\" row=\"3\" col=\"1\" />",
+            "    <Label text=\"3, 2\" row=\"3\" col=\"2\" />",
+            "    <Label text=\"3, 3\" row=\"3\" col=\"3\" />",
+            "</GridLayout>"
+        ]
+    },
+
+    // Views
+    "{N}-vue Scroll View": {
+        "prefix": "nsscrollview",
+        "body": [
+            "<ScrollView>",
+            "    $1",
+            "</ScrollView>"
+        ]
+    },
+    "{N}-vue List View": {
+        "prefix": "nslistview",
+        "body": [
+            "<ListView for=\"item in items\" @itemLoading=\"onItemLoading\" @itemTap=\"onItemTap\">",
+            "    <v-template>",
+            "        $1",
+            "    <v-template>",
+            "</ListView>"
+        ]
+    },
+    "{N}-vue Tab View": {
+        "prefix": "nstabview",
+        "body": [
+            "<TabView id=\"tabViewContainer\">",
+            "    <TabView.items>",
+            "        <TabViewItem title=\"Tab 1\">",
+            "            <TabViewItem.view>",
+            "                <Label text=\"This is Label in Tab 1\" />",
+            "            </TabViewItem.view>",
+            "        </TabViewItem>",
+            "        <TabViewItem title=\"Tab 2\">",
+            "            <TabViewItem.view>",
+            "                <Label text=\"This is Label in Tab 2\" />",
+            "            </TabViewItem.view>",
+            "        </TabViewItem>",
+            "    </TabView.items>",
+            "</TabView>",
+            "$1"
+        ]
+    },
+    "{N}-vue Web View": {
+        "prefix": "nswebview",
+        "body": [
+            "<WebView :src=\"someUrl | pathToLocalFile | htmlString\" />",
+            "$1"
+        ]
+    },
+
+    // Widgets
+    "{N}-vue Page": {
+        "prefix": "nspage",
+        "body": [
+            "<Page xmlns=\"http://www.nativescript.org/tns.xsd\" loaded=\"onLoaded\" navigatedTo=\"onNavigatedTo\">",
+            "    $1",
+            "</Page>"
+        ]
+    },
+    "{N}-vue Image": {
+        "prefix": "nsimg",
+        "body": [
+            "<Image :src=\"$1\" stretch=\"none\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue Label": {
+        "prefix": "nslabel",
+        "body": [
+            "<Label text=\"$1\" textWrap=\"true\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue Button": {
+        "prefix": "nsbtn",
+        "body": [
+            "<Button text=\"$1\" @tap=\"$2\" />",
+            "$3"
+        ]
+    },
+    "{N}-vue Text Field": {
+        "prefix": "nstextfield",
+        "body": [
+            "<TextField hint=\"$1\" text=\"{{ $2 }}\" />",
+            "$3"
+        ]
+    },
+    "{N}-vue Password Field": {
+        "prefix": "nspassword",
+        "body": [
+            "<TextField hint=\"Enter your password.\" text=\"{{ $1 }}\" secure=\"true\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue Editable TextView": {
+        "prefix": "nstextview_editable",
+        "body": [
+            "<TextView hint=\"$1\" text=\"{{ $2 }}\" editable=\"true\" />",
+            "$3"
+        ]
+    },
+    "{N}-vue Non-Editable TextView": {
+        "prefix": "nstextview_non-editable",
+        "body": [
+            "<TextView text=\"{{ $1 }}\" editable=\"false\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue SearchBar": {
+        "prefix": "nssearchbar",
+        "body": [
+            "<SearchBar id=\"${1:searchBar}\" hint=\"${2:Search}\" text=\"$3\" clear=\"${4:onClear}\" submit=\"${5:onSubmit}\" />",
+            "$6"
+        ]
+    },
+    "{N}-vue Switch": {
+        "prefix": "nsswitch",
+        "body": [
+            "<Switch checked=\"{{ $1 }}\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue Progress Bar": {
+        "prefix": "nsprogress",
+        "body": [
+            "<Progress value=\"{{ $1 }}\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue Slider": {
+        "prefix": "nsslider",
+        "body": [
+            "<Slider minValue=\"$1\" maxValue=\"$2\" value=\"{{ $3 }}\" />",
+            "$4"
+        ]
+    },
+    "{N}-vue Date Picker": {
+        "prefix": "nsdate",
+        "body": [
+            "<DatePicker day=\"$1\" month=\"$2\" year=\"$3\"></DatePicker>",
+            "$4"
+        ]
+    },
+    "{N}-vue Time Picker": {
+        "prefix": "nstime",
+        "body": [
+            "<TimePicker hour=\"$1\" minute=\"$2\"></TimePicker>",
+            "$3"
+        ]
+    },
+    "{N}-vue List Picker": {
+        "prefix": "nslistpicker",
+        "body": [
+            "<ListPicker items=\"{{ $1 }}\" selectedIndex=\"$2\"></ListPicker>",
+            "$3"
+        ]
+    },
+    "{N}-vue Activity Indicator": {
+        "prefix": "nsloading",
+        "body": [
+            "<ActivityIndicator width=\"100\" height=\"100\" busy=\"{{ $1 }}\" />",
+            "$2"
+        ]
+    },
+    "{N}-vue Segmented Bar": {
+        "prefix": "nssegmentedbar",
+        "body": [
+            "<SegmentedBar selectedIndex=\"{{ selectedIndex }}\" @selectedIndexChange=\"$1\">",
+            "    <SegmentedBarItem title=\"First\" />",
+            "    <SegmentedBarItem title=\"Second\" />",
+            "    <SegmentedBarItem title=\"Third\" />",
+            "    $2",
+            "</SegmentedBar>"
+        ]
+    },
+    "{N}-vue Border": {
+        "prefix": "nsborder",
+        "body": [
+            "<Border borderRadius=\"$1\" borderWidth=\"$2\" borderColor=\"#000000\">",
+            "    $3",
+            "</Border>"
+        ]
+    },
+
+    // Attributes
+    "{N}-vue Icon Attribute": {
+        "prefix": "icon",
+        "body": "icon=\"res://$1\"$2"
+    },
+  	"{N}-vue Text Wrap Attribute": {
+        "prefix": "wrap",
+        "body": "textWrap=\"true\"$2"
+    },
+    "{N}-vue Horizontal Alignment Attribute": {
+        "prefix": "halign",
+        "body": "horizontalAlignment=\"$1\"$2"
+    },
+    "{N}-vue Vertical Alignment Attribute": {
+        "prefix": "valign",
+        "body": "verticalAlignment=\"$1\"$2"
+    },
+    "{N}-vue Visibility Attribute": {
+        "prefix": "visibility",
+        "body": ":visibility=\"isItemVisible ? 'visible' : 'collapsed'\"$2"
+    },
+    "{N}-vue Stretch Attribute": {
+        "prefix": "stretch",
+        "body": "stretch=\"fill$1\"$2"
+    },
+    "{N}-vue Keyboard Type Attribute": {
+        "prefix": "kbtype",
+        "body": "keyboardType=\"email$1\"$2"
+    }
+}

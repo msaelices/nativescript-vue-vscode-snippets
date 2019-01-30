@@ -1,0 +1,15 @@
+{
+	"{N} HTTP fetch": {
+		"prefix": "nsfetch",
+		"body": [
+			"import { fetch } from 'tns-core-modules/fetch';",
+			"fetch('$1')",
+      "  .then((response) => {",
+      "  })",
+      "  .catch((error) => {",
+      "    console.error(error);",
+      "  });"
+		],
+		"description": "Fetch sentence for getting results"
+	}
+}

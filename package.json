@@ -13,7 +13,23 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/code.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/template.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/code.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/template.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/template.json"
             }
         ]
     }
