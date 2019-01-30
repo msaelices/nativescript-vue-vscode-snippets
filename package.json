@@ -2,7 +2,7 @@
     "name": "nativescript-vue-snippets",
     "displayName": "NativeScript-Vue Snippets",
     "description": "Snippets for Telerik's NativeScript mobile framework with Vue",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "publisher": "msaelices",
     "engines": {
         "vscode": "^1.30.0"
