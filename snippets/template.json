@@ -253,7 +253,7 @@
   "{N}-vue Page": {
     "prefix": "nspage",
     "body": [
-      "<Page xmlns=\"http://www.nativescript.org/tns.xsd\" loaded=\"onLoaded\" navigatedTo=\"onNavigatedTo\">",
+      "<Page>",
       "  $0",
       "</Page>"
     ]

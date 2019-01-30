@@ -72,5 +72,13 @@
       "$0"
 		],
 		"description": "Navigate to another page using {N}-vue"
+	},
+	"{N}-vue register component": {
+		"prefix": "nsvuecomponent",
+		"body": [
+			"Vue.component($1, $2)",
+      "$0"
+		],
+		"description": "Register a component in {N}-vue"
 	}
 }
