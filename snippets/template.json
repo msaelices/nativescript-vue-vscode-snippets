@@ -214,10 +214,10 @@
   "{N}-vue List View": {
     "prefix": "nslistview",
     "body": [
-      "<ListView for=\"item in items\" @itemLoading=\"onItemLoading\" @itemTap=\"onItemTap\">",
+      "<ListView for=\"item in items\" @itemTap=\"onItemTap\">",
       "  <v-template>",
-      "    $0",
-      "  <v-template>",
+      "    <Label :text=\"item.text\" />$0",
+      "  </v-template>",
       "</ListView>"
     ]
   },
