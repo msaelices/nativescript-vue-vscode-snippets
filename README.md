@@ -1,65 +1,76 @@
-# nativescript-vue-snippets README
+# NativeScript XML Snippets for Visual Studio Code
 
-This is the README for your extension "nativescript-vue-snippets". After writing up a brief description, we recommend including the following sections.
+vscode extension with useful snippets for developing NativeScript-Vue mobile applications.
 
-## Features
+Based on the **NativeScript XML Snippets** extension, but adapted to the Vue binding and added other snippets not related to the XML templating system.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+All snippets are prefixed with ```ns```. Attributes do not have a prefix.
 
-For example if there is an image subfolder under your extension project workspace:
+## Code Snippets
+- HTTP Fetch example - ```nsfetch```
 
-\!\[feature X\]\(images/feature-x.png\)
+## UI Components
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Layouts
+- Absolute Layout - ```nsabsolute```
+- Dock Layout - ```nsdock```
+- Grid Layout - ```nsgrid```
+- Stack Layout - ```nsstack```
+- Wrap Layout - ```nswrap```
 
-## Requirements
+### Widgets
+- Page - ```nspage```
+- Action Bar - ```nsactionbar```
+- Label - ```nslabel```
+- Text Field - ```nstextfield```
+- Secure Text Field (for passwords) - ```nspassword```
+- Text View - ```nstextview```
+- Image - ```nsimg```
+- Border - ```nsborder```
+- Button - ```nsbtn```
+- Search Bar - ```nssearchbar```
+- Switch - ```nsswitch```
+- Slider - ```nsslider```
+- Progress - ```nsprogress```
+- Activity Indicator - ```nsloading```
+- Date Picker - ```nsdate```
+- Time Picker - ```nstime```
+- List Picker - ```nslistpicker```
+- Segmented Bar - ```nssegmentedbar```
+- Tab View - ```nstabview```
+- List View - ```nslistview```
+- Web View - ```nswebview```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Attributes
+- cssClass - ```css```
+- text - ```text```
+- icon - ```icon```
+- tap - ```tap```
+- textWrap - ```wrap```
+- horizontalAlignment - ```halign```
+- verticalAlignment - ```valign```
+- visibility - ```visibility```
+- stretch - ```stretch```
+- keyboardType - ```kbtype```
+- colSpan - ```colspan```
+- rowSpan - ```rowspan```
+- row - ```row```
+- col - ```col```
+- width - ```width```
+- height - ```height```
 
-## Extension Settings
+## How to use?
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Inside Visual Studio Code press
 
-For example:
+  ```bash
+  CTRL + P
+  ```
 
-This extension contributes the following settings:
+2. Type the following in the console window
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+  ``` bash
+  ext install nativescript-vue-snippets
+  ```
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+3. Hit enter.
