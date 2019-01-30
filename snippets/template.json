@@ -18,7 +18,7 @@
     "prefix": "nsstack",
     "body": [
       "<StackLayout>",
-      "  $1",
+      "  $0",
       "</StackLayout>"
     ]
   },
@@ -26,7 +26,7 @@
     "prefix": "nsstack_horizontal",
     "body": [
       "<StackLayout orientation=\"horizontal\">",
-      "  $1",
+      "  $0",
       "</StackLayout>"
     ]
   },
@@ -43,7 +43,7 @@
     "body": [
       "<AbsoluteLayout>",
       "  <Label text=\"This is Label 1\" top=\"\"  right=\"\" bottom=\"\" left=\"\" />",
-      "  $1",
+      "  $0",
       "</AbsoluteLayout>"
     ]
   },
@@ -207,7 +207,7 @@
     "prefix": "nsscrollview",
     "body": [
       "<ScrollView>",
-      "  $1",
+      "  $0",
       "</ScrollView>"
     ]
   },
@@ -216,7 +216,7 @@
     "body": [
       "<ListView for=\"item in items\" @itemLoading=\"onItemLoading\" @itemTap=\"onItemTap\">",
       "  <v-template>",
-      "    $1",
+      "    $0",
       "  <v-template>",
       "</ListView>"
     ]
@@ -238,14 +238,14 @@
       "    </TabViewItem>",
       "  </TabView.items>",
       "</TabView>",
-      "$1"
+      "$0"
     ]
   },
   "{N}-vue Web View": {
     "prefix": "nswebview",
     "body": [
       "<WebView :src=\"someUrl | pathToLocalFile | htmlString\" />",
-      "$1"
+      "$0"
     ]
   },
 
@@ -254,7 +254,7 @@
     "prefix": "nspage",
     "body": [
       "<Page xmlns=\"http://www.nativescript.org/tns.xsd\" loaded=\"onLoaded\" navigatedTo=\"onNavigatedTo\">",
-      "  $1",
+      "  $0",
       "</Page>"
     ]
   },
@@ -262,49 +262,49 @@
     "prefix": "nsimg",
     "body": [
       "<Image :src=\"$1\" stretch=\"none\" />",
-      "$2"
+      "$0"
     ]
   },
   "{N}-vue Label": {
     "prefix": "nslabel",
     "body": [
       "<Label text=\"$1\" textWrap=\"true\" />",
-      "$2"
+      "$0"
     ]
   },
   "{N}-vue Button": {
     "prefix": "nsbtn",
     "body": [
       "<Button text=\"$1\" @tap=\"$2\" />",
-      "$3"
+      "$0"
     ]
   },
   "{N}-vue Text Field": {
     "prefix": "nstextfield",
     "body": [
       "<TextField hint=\"$1\" text=\"{{ $2 }}\" />",
-      "$3"
+      "$0"
     ]
   },
   "{N}-vue Password Field": {
     "prefix": "nspassword",
     "body": [
-      "<TextField hint=\"Enter your password.\" text=\"{{ $1 }}\" secure=\"true\" />",
-      "$2"
+      "<TextField hint=\"Enter your password.\" text=\"$1\" secure=\"true\" />",
+      "$0"
     ]
   },
   "{N}-vue Editable TextView": {
     "prefix": "nstextview_editable",
     "body": [
       "<TextView hint=\"$1\" text=\"{{ $2 }}\" editable=\"true\" />",
-      "$3"
+      "$0"
     ]
   },
   "{N}-vue Non-Editable TextView": {
     "prefix": "nstextview_non-editable",
     "body": [
-      "<TextView text=\"{{ $1 }}\" editable=\"false\" />",
-      "$2"
+      "<TextView text=\"$1\" editable=\"false\" />",
+      "$0"
     ]
   },
   "{N}-vue SearchBar": {
@@ -317,50 +317,50 @@
   "{N}-vue Switch": {
     "prefix": "nsswitch",
     "body": [
-      "<Switch checked=\"{{ $1 }}\" />",
-      "$2"
+      "<Switch checked=\"$1\" />",
+      "$0"
     ]
   },
   "{N}-vue Progress Bar": {
     "prefix": "nsprogress",
     "body": [
-      "<Progress value=\"{{ $1 }}\" />",
-      "$2"
+      "<Progress value=\"$1\" />",
+      "$0"
     ]
   },
   "{N}-vue Slider": {
     "prefix": "nsslider",
     "body": [
       "<Slider minValue=\"$1\" maxValue=\"$2\" value=\"{{ $3 }}\" />",
-      "$4"
+      "$0"
     ]
   },
   "{N}-vue Date Picker": {
     "prefix": "nsdate",
     "body": [
       "<DatePicker day=\"$1\" month=\"$2\" year=\"$3\"></DatePicker>",
-      "$4"
+      "$0"
     ]
   },
   "{N}-vue Time Picker": {
     "prefix": "nstime",
     "body": [
       "<TimePicker hour=\"$1\" minute=\"$2\"></TimePicker>",
-      "$3"
+      "$0"
     ]
   },
   "{N}-vue List Picker": {
     "prefix": "nslistpicker",
     "body": [
-      "<ListPicker items=\"{{ $1 }}\" selectedIndex=\"$2\"></ListPicker>",
-      "$3"
+      "<ListPicker items=\"$1\" selectedIndex=\"$2\"></ListPicker>",
+      "$0"
     ]
   },
   "{N}-vue Activity Indicator": {
     "prefix": "nsloading",
     "body": [
-      "<ActivityIndicator width=\"100\" height=\"100\" busy=\"{{ $1 }}\" />",
-      "$2"
+      "<ActivityIndicator width=\"100\" height=\"100\" busy=\"$1\" />",
+      "$0"
     ]
   },
   "{N}-vue Segmented Bar": {
@@ -370,7 +370,7 @@
       "  <SegmentedBarItem title=\"First\" />",
       "  <SegmentedBarItem title=\"Second\" />",
       "  <SegmentedBarItem title=\"Third\" />",
-      "  $2",
+      "  $0",
       "</SegmentedBar>"
     ]
   },
@@ -378,7 +378,7 @@
     "prefix": "nsborder",
     "body": [
       "<Border borderRadius=\"$1\" borderWidth=\"$2\" borderColor=\"#000000\">",
-      "  $3",
+      "  $0",
       "</Border>"
     ]
   },
@@ -386,30 +386,30 @@
   // Attributes
   "{N}-vue Icon Attribute": {
     "prefix": "icon",
-    "body": "icon=\"res://$1\"$2"
+    "body": "icon=\"res://$1\"$0"
   },
   	"{N}-vue Text Wrap Attribute": {
     "prefix": "wrap",
-    "body": "textWrap=\"true\"$2"
+    "body": "textWrap=\"true\"$0"
   },
   "{N}-vue Horizontal Alignment Attribute": {
     "prefix": "halign",
-    "body": "horizontalAlignment=\"$1\"$2"
+    "body": "horizontalAlignment=\"$1\"$0"
   },
   "{N}-vue Vertical Alignment Attribute": {
     "prefix": "valign",
-    "body": "verticalAlignment=\"$1\"$2"
+    "body": "verticalAlignment=\"$1\"$0"
   },
   "{N}-vue Visibility Attribute": {
     "prefix": "visibility",
-    "body": ":visibility=\"isItemVisible ? 'visible' : 'collapsed'\"$2"
+    "body": ":visibility=\"isItemVisible ? 'visible' : 'collapsed'\"$0"
   },
   "{N}-vue Stretch Attribute": {
     "prefix": "stretch",
-    "body": "stretch=\"fill$1\"$2"
+    "body": "stretch=\"fill$1\"$0"
   },
   "{N}-vue Keyboard Type Attribute": {
     "prefix": "kbtype",
-    "body": "keyboardType=\"email$1\"$2"
+    "body": "keyboardType=\"email$1\"$0"
   }
 }
