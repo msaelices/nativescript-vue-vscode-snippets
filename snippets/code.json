@@ -3,7 +3,7 @@
 		"prefix": "nsapp",
 		"body": [
 			"import * as app from 'tns-core-modules/application';",
-      "$1"
+      "$0"
 		],
 		"description": "isIOS import sentence"
 	},
@@ -16,7 +16,7 @@
       "  },",
       "  methods: {",
       "  }",
-      "}"
+      "};"
 		],
 		"description": "Vue instance object"
 	},
@@ -37,7 +37,7 @@
 		"prefix": "nsisandroid",
 		"body": [
 			"import { isAndroid } from 'tns-core-modules/platform';",
-      "$1"
+      "$0"
 		],
 		"description": "isAndroid import sentence"
 	},
@@ -45,7 +45,7 @@
 		"prefix": "nsisios",
 		"body": [
 			"import { isIOS } from 'tns-core-modules/platform';",
-      "$1"
+      "$0"
 		],
 		"description": "isIOS import sentence"
 	},
@@ -61,8 +61,16 @@
       "    console.log(`Launched iOS application with options: ${ios}`);",
       "  }",
       "});",
-      "$1"
+      "$0"
 		],
 		"description": "launchEvent block"
+	},
+	"{N}-vue $navigateTo": {
+		"prefix": "nsnavigate",
+		"body": [
+			"this.$$navigateTo($1);",
+      "$0"
+		],
+		"description": "Navigate to another page using {N}-vue"
 	}
 }

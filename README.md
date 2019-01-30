@@ -15,6 +15,7 @@ All snippets are prefixed with ```ns```. Attributes do not have a prefix.
 - `isAndroid` import sentence - ```nsisandroid```
 - NS `app` import sentence - ```nsapp```
 - NS `launchEvent` block code - ```nslaunchevent```
+- NS-vue `$navigateTo(Component)` sentence - ```nsnavigate```
 
 ## UI Components
 
