@@ -3,6 +3,7 @@
     "displayName": "NativeScript-Vue Snippets",
     "description": "Snippets for Telerik's NativeScript mobile framework with Vue",
     "version": "0.0.1",
+    "publisher": "msaelices",
     "engines": {
         "vscode": "^1.30.0"
     },
@@ -32,5 +33,9 @@
                 "path": "./snippets/template.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/msaelices/nativescript-vue-vscode-snippets.git"
     }
 }
