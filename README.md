@@ -2,6 +2,8 @@
 
 vscode extension with useful snippets for developing NativeScript-Vue mobile applications.
 
+![ns-vue-vscode-extension](https://user-images.githubusercontent.com/136875/51975028-90c93f80-2481-11e9-8370-34723d33fd65.gif)
+
 Based on the **NativeScript XML Snippets** extension, but adapted to the Vue binding and added other snippets not related to the XML templating system.
 
 All snippets are prefixed with ```ns```. Attributes do not have a prefix.
