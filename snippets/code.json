@@ -1,4 +1,12 @@
 {
+	"{N} app import": {
+		"prefix": "nsapp",
+		"body": [
+			"import * as app from 'tns-core-modules/application';",
+      "$1"
+		],
+		"description": "isIOS import sentence"
+	},
   "{N} Vue instance": {
 		"prefix": "nsvue",
 		"body": [
@@ -25,7 +33,7 @@
 		],
 		"description": "Fetch sentence for getting results"
 	},
-	"{N} isAndroid": {
+	"{N} isAndroid import": {
 		"prefix": "nsisandroid",
 		"body": [
 			"import { isAndroid } from 'tns-core-modules/platform';",
@@ -33,12 +41,28 @@
 		],
 		"description": "isAndroid import sentence"
 	},
-	"{N} isIOS": {
+	"{N} isIOS import": {
 		"prefix": "nsisios",
 		"body": [
 			"import { isIOS } from 'tns-core-modules/platform';",
       "$1"
 		],
 		"description": "isIOS import sentence"
+	},
+	"{N} launchEvent": {
+		"prefix": "nslaunchevent",
+		"body": [
+			"import * as app from 'tns-core-modules/application';",
+      "",
+      "app.on(app.launchEvent, ({ android, ios }) => {",
+      "  if (android) {",
+      "    console.log(`Launched Android app with the following intent: ${android}`);",
+      "  } else if (ios !== undefined) {",
+      "    console.log(`Launched iOS application with options: ${ios}`);",
+      "  }",
+      "});",
+      "$1"
+		],
+		"description": "launchEvent block"
 	}
 }
