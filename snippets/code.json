@@ -1,4 +1,17 @@
 {
+  "{N} Vue instance": {
+		"prefix": "nsvue",
+		"body": [
+			"export default {",
+      "  data () {",
+      "    return {};",
+      "  },",
+      "  methods: {",
+      "  }",
+      "}"
+		],
+		"description": "Vue instance object"
+	},
 	"{N} HTTP fetch": {
 		"prefix": "nsfetch",
 		"body": [
@@ -11,5 +24,21 @@
       "  });"
 		],
 		"description": "Fetch sentence for getting results"
+	},
+	"{N} isAndroid": {
+		"prefix": "nsisandroid",
+		"body": [
+			"import { isAndroid } from 'tns-core-modules/platform';",
+      "$1"
+		],
+		"description": "isAndroid import sentence"
+	},
+	"{N} isIOS": {
+		"prefix": "nsisios",
+		"body": [
+			"import { isIOS } from 'tns-core-modules/platform';",
+      "$1"
+		],
+		"description": "isIOS import sentence"
 	}
 }
