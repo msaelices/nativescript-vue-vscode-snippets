@@ -80,5 +80,13 @@
       "$0"
 		],
 		"description": "Register a component in {N}-vue"
-	}
+  },
+	"{N} http module import": {
+		"prefix": "nshttp",
+		"body": [
+			"import * as http from 'tns-core-modules/http';",
+      "$0"
+		],
+		"description": "Import the {N} http module"
+  }
 }
