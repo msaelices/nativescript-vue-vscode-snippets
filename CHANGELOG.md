@@ -2,6 +2,16 @@
 
 All notable changes to the "nativescript-vue-snippets" extension will be documented in this file.
 
+## 0.6.0 (2019-02-01)
+
+### Features
+
+* Improved some placeholders.
+
+### Bug Fixes
+
+* Fixed `ActionBar` and `TabView` snippets.
+
 ## 0.5.0 (2019-01-30)
 
 ### Features
