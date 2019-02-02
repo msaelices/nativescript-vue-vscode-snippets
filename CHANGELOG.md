@@ -2,6 +2,13 @@
 
 All notable changes to the "nativescript-vue-snippets" extension will be documented in this file.
 
+## 0.7.0 (2019-02-01)
+
+### Features
+
+* `nsnavigateback` snippet.
+* Added `StackLayout` to the `<ListView>` snippet.
+
 ## 0.6.0 (2019-02-01)
 
 ### Features

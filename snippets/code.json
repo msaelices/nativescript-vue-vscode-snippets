@@ -88,5 +88,14 @@
       "$0"
 		],
 		"description": "Import the {N} http module"
+  },
+  "{N} navigate back": {
+		"prefix": "nsnavigateback",
+		"body": [
+      "import * as frameModule from 'tns-core-modules/ui/frame';",
+      "frameModule.topmost().goBack();",
+      "$0"
+		],
+		"description": "Navigate back to the previous page"
   }
 }

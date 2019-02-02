@@ -214,7 +214,9 @@
     "body": [
       "<ListView for=\"item in ${1:items}\" @itemTap=\"onItemTap\">",
       "  <v-template>",
-      "    <Label :text=\"item.text\" />$0",
+      "    <StackLayout>",
+      "      <Label :text=\"item.text\" />$0",
+      "    </StackLayout>",
       "  </v-template>",
       "</ListView>"
     ]
