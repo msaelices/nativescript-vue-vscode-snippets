@@ -3,12 +3,10 @@
   "{N}-vue Action Bar": {
     "prefix": "nsactionbar",
     "body": [
-      "<ActionBar title=\"Title\" icon=\"\">",
-      "  <NavigationButton text=\"Back\" icon=\"\" @tap="" />",
-      "  <ActionBar.actionItems>",
-      "    <ActionItem icon=\"\" text=\"Left\" ios.position=\"left\" @tap=\"\" />",
-      "    <ActionItem icon=\"\" text=\"Right\" ios.position=\"right\" @tap=\"\" />",
-      "  </ActionBar.actionItems>",
+      "<ActionBar title=\"${1:Title}\" icon=\"\">",
+      "  <NavigationButton text=\"Back\" android.systemIcon=\"ic_menu_back\" @tap=\"${2:goBack}\" />",
+      "  <ActionItem icon=\"\" text=\"Left\" ios.position=\"left\" @tap=\"\" />",
+      "  <ActionItem icon=\"\" text=\"Right\" ios.position=\"right\" @tap=\"\" />",
       "</ActionBar>"
     ]
   },
@@ -214,7 +212,7 @@
   "{N}-vue List View": {
     "prefix": "nslistview",
     "body": [
-      "<ListView for=\"item in items\" @itemTap=\"onItemTap\">",
+      "<ListView for=\"item in ${1:items}\" @itemTap=\"onItemTap\">",
       "  <v-template>",
       "    <Label :text=\"item.text\" />$0",
       "  </v-template>",
@@ -224,19 +222,17 @@
   "{N}-vue Tab View": {
     "prefix": "nstabview",
     "body": [
-      "<TabView id=\"tabViewContainer\">",
-      "  <TabView.items>",
-      "    <TabViewItem title=\"Tab 1\">",
-      "      <TabViewItem.view>",
-      "        <Label text=\"This is Label in Tab 1\" />",
-      "      </TabViewItem.view>",
-      "    </TabViewItem>",
-      "    <TabViewItem title=\"Tab 2\">",
-      "      <TabViewItem.view>",
-      "        <Label text=\"This is Label in Tab 2\" />",
-      "      </TabViewItem.view>",
-      "    </TabViewItem>",
-      "  </TabView.items>",
+      "<TabView :selectedIndex=\"${1:tabIndex}\">",
+      "  <TabViewItem title=\"${2:Tab1}\">",
+      "    <StackLayout>",
+      "      <Label text=\"This is Label in Tab 1\" />",
+      "    </StackLayout>",
+      "  </TabViewItem>",
+      "  <TabViewItem title=\"${3:Tab2}\">",
+      "    <StackLayout>",
+      "      <Label text=\"This is Label in Tab 2\" />",
+      "    </StackLayout>",
+      "  </TabViewItem>",
       "</TabView>",
       "$0"
     ]
@@ -289,7 +285,7 @@
   "{N}-vue Password Field": {
     "prefix": "nspassword",
     "body": [
-      "<TextField hint=\"Enter your password.\" text=\"$1\" secure=\"true\" />",
+      "<TextField hint=\"Enter your password.\" text=\"${1:Password}\" secure=\"true\" />",
       "$0"
     ]
   },
