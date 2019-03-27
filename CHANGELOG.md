@@ -2,6 +2,12 @@
 
 All notable changes to the "nativescript-vue-snippets" extension will be documented in this file.
 
+## 0.8.1 (2019-03-28)
+
+### Bug Fixes
+
+* Fixed minor `nsnavigateback` issue.
+
 ## 0.8.0 (2019-03-28)
 
 ### Features

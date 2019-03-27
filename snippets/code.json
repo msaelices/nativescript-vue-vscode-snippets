@@ -92,7 +92,7 @@
   "{N} navigate back": {
 		"prefix": "nsnavigateback",
 		"body": [
-      "this.$navigateBack();",
+      "this.$$navigateBack();",
       "$0"
 		],
 		"description": "Navigate back to the previous page"
