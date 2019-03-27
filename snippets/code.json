@@ -92,8 +92,7 @@
   "{N} navigate back": {
 		"prefix": "nsnavigateback",
 		"body": [
-      "import * as frameModule from 'tns-core-modules/ui/frame';",
-      "frameModule.topmost().goBack();",
+      "this.$navigateBack();",
       "$0"
 		],
 		"description": "Navigate back to the previous page"

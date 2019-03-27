@@ -2,6 +2,12 @@
 
 All notable changes to the "nativescript-vue-snippets" extension will be documented in this file.
 
+## 0.8.0 (2019-03-28)
+
+### Features
+
+* Improved `nsnavigateback` snippet, using `$navigateBack`.
+
 ## 0.7.0 (2019-02-01)
 
 ### Features
