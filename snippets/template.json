@@ -1,4 +1,43 @@
 {
+  // base snippets
+  "{N}-vue base snippet with ts and sass": {
+    "prefix": "nsbase_ts_sass",
+    "body": [
+      "<template>",
+      "   <Page>",
+      "   </Page>",
+      "</template>",
+      " ",
+      "<script lang=\"ts\">",
+      "export default {",
+      " ",
+      "}",
+      "</script>",
+      " ",
+      "<style lang=\"sass\" scoped>",
+      " ",
+      "</style>"
+    ]
+  },
+  "{N}-vue base snippet": {
+    "prefix": "nsbase",
+    "body": [
+      "<template>",
+      "   <Page>",
+      "   </Page>",
+      "</template>",
+      " ",
+      "<script>",
+      "export default {",
+      " ",
+      "}",
+      "</script>",
+      " ",
+      "<style scoped>",
+      " ",
+      "</style>"
+    ]
+  },
   // Action Bar
   "{N}-vue Action Bar": {
     "prefix": "nsactionbar",
