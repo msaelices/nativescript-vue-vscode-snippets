@@ -2,6 +2,12 @@
 
 All notable changes to the "nativescript-vue-snippets" extension will be documented in this file.
 
+## 0.9.0 (2020-05-26)
+
+### Features
+
+* `nsbase` and `nsbase_ts_sass` snippets.
+
 ## 0.8.1 (2019-03-28)
 
 ### Bug Fixes
